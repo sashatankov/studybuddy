@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader/index';
-import DropdownCard from '../components/DropdownCard/dropdownCard';
+import DropdownCard from './components/DropdownCard/dropdownCard';
 
-import './Courses.scss';
+import './StudyPlan.scss';
 import Navigation from "../Navigation.css";
 
 const render = Component => {
@@ -15,7 +15,7 @@ const render = Component => {
     );
 };
 
-class courses extends Component {
+class studyPlan extends Component {
     render()
     {
         return (
@@ -132,8 +132,8 @@ class courses extends Component {
 
 if (module.hot) {
     module.hot.accept( () => {
-        render(courses);
+        render(studyPlan);
     });
 }
 
-export default courses;
+export default studyPlan;
