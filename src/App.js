@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
+import courses from './StudyPlan';
+
 class App extends Component {
 
   screens = {
@@ -29,7 +31,7 @@ class App extends Component {
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
     }
     else if (this.state.currentScreen = this.screens.STUDY_PLAN){
-      // set the currentScreenComponent to studyPlan component
+      currentScreenComponent = <courses/>;
     }
     else if (this.state.currentScreen = this.screens.SCHEDULE){
       // set the currentScreenComponent to schedule component
