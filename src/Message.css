@@ -1,0 +1,12 @@
+.message {
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+}
+.headline, .content{
+    display: flex;
+    flex-direction: row-reverse;
+}

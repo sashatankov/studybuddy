@@ -1,0 +1,18 @@
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+
+}
+button{
+    background-color: white;
+    border: none;
+    padding: 1em;
+}
