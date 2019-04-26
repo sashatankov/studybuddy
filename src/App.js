@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
-import courses from "./screens/Courses";
-
 class App extends Component {
 
   screens = {
@@ -31,7 +29,7 @@ class App extends Component {
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
     }
     else if (this.state.currentScreen = this.screens.STUDY_PLAN){
-      currentScreenComponent = courses;
+      // set the currentScreenComponent to studyPlan component
     }
     else if (this.state.currentScreen = this.screens.SCHEDULE){
       // set the currentScreenComponent to schedule component
@@ -40,10 +38,10 @@ class App extends Component {
       // set the currentScreenComponent to exams component
     }
     return (
-        <div className="App">
-          <Navigation buttonClicked={this._setScreen.bind(this)}/>
-          {currentScreenComponent}
-        </div>
+      <div className="App">
+        <Navigation buttonClicked={this._setScreen.bind(this)}/>
+        {currentScreenComponent}
+      </div>
     );
   }
 }
