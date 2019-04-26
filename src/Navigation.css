@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row-reverse;
 }
+.nav-btn{
+    margin-top: 1.2em;
+    margin-right: 1em;
+}
 .navigation {
     display: flex;
     flex-direction: row-reverse;
@@ -11,10 +15,15 @@
 .logo{
 
 }
-
 button{
-    align-self: start;
     background-color: white;
-    border: none;
+    border: 2px solid transparent;
     padding: 1em;
+    font-size: 1.1em;
+}
+button:hover {
+    border-bottom-color: #2A3151;
+}
+button:focus {
+    outline: none;
 }

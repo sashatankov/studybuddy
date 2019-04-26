@@ -1,38 +1,28 @@
 import React, { Component } from 'react';
 import './Navigation.css';
-import {
-    BrowserRouter as Router,
-    Link,
-} from 'react-router-dom';
-import {Routes} from "./Routes";
-
 export default class navigation extends Component {
-  render() {
-    const logo = require('./logo200.png');
-    return (
-      <menu className="navigation">
-          <Router>
-            <div className="nav">
-                <button>
-                    <div>
-                        <Link to="/">דף הבית</Link>
+
+    buttonClicked = null;
+    _handleClick(val){
+        this.props.buttonClicked(val);
+    }
+    render() {
+        const logo = require('./logo200.png');
+        return (
+            <div className="navigation">
+                <div className="nav">
+                    <div className="nav-btn">
+                        <button onClick={this._handleClick(this.value)} value='general'>מידע כללי</button>
+                        <button onClick={this._handleClick(this.value)} value='studyPlan'>מסלול לימודים</button>
+                        <button onClick={this._handleClick(this.value)} value='schedule'>מערכת שעות</button>
+                        <button onClick={this._handleClick(this.value)} value='exams'>לוח מבחנים</button>
                     </div>
-                </button>
-                <button>מידע כללי</button>
-                <button>
-                    <div>
-                        <Link to="/Courses">מסלול לימודים</Link>
-                    </div>
-                </button>
-              <button>מערכת שעות</button>
-              <button>לוח מבחנים</button>
-                {Routes}
+
+                </div>
+                <div className="logo">
+                    <img src={logo} alt="logo"/>
+                </div>
             </div>
-          </Router>
-        <div className="logo">
-          <img src={logo} alt="logo"/>
-        </div>
-      </menu>
-    )
-  }
+        )
+    }
 }
