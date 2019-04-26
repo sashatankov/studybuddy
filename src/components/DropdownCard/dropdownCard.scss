@@ -1,0 +1,25 @@
+.dropdown-card {
+  display: flex;
+  margin-bottom: 1cm;
+  min-height: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+
+
+  .button{
+    display: flex;
+    border-style: none;
+    width: 8cm;
+    height: 0.7cm;
+    transition: .4s;
+    border-color: #741616;
+    text-align: center;
+
+    &:hover{
+      transform: scale(1.1);
+      border-radius: 50px;
+    }
+
+  }
+
+
+}

@@ -11,7 +11,9 @@
 .logo{
 
 }
+
 button{
+    align-self: start;
     background-color: white;
     border: none;
     padding: 1em;

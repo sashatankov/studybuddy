@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Message from './Message';
+
 import Navigation from "./Navigation";
 class App extends Component {
   render() {
@@ -8,7 +8,6 @@ class App extends Component {
       <div className="App">
           {/*just for example. to remove later*/}
         <Navigation/>
-        <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>
 
       </div>
     );
