@@ -13,16 +13,14 @@ class CourseDetails extends React.Component {
             professor,
             TA,
             course_average,
+            course_average_link,
             prerequisites,
             exam_a_date,
             exam_b_date,
             type,
-            bgColor
         } = this.props;
         return(
-            <div className='CDroot' style={{
-                backgroundColor : `rgba(${bgColor}, 0.25)`
-            }}>
+            <div className='CDroot'>
 
                 <div className='professor'>
                     {professor}
@@ -33,7 +31,7 @@ class CourseDetails extends React.Component {
                 </div>
 
                 <div className='average'>
-                    {course_average}
+                    <a href={course_average_link}>{course_average}</a>
                 </div>
 
                 <div className='prerequisites'>

@@ -35,8 +35,6 @@ class DropdownCard extends React.Component{
             type,
             messageOnToggled,
             messageOnUntoggled,
-            buttonColor,
-            bgColor
         } = this.props;
         return(
             <Card className='dropdown-card'>
@@ -44,14 +42,11 @@ class DropdownCard extends React.Component{
                     name={ name }
                     number={ number }
                     nz={ nz }
-                    bgColor={ bgColor }
                 />
 
                 {
                     this.state.arrowToggled === true  ? <React.Fragment>
-                        <button className='button' style={{
-                            backgroundColor : buttonColor,
-                        }}>
+                        <button className='button'>
                             <Arrow
                                 onClick={this.toggleArrow.bind(this)}
                                 position={ this.state.arrowToggled }
@@ -67,11 +62,8 @@ class DropdownCard extends React.Component{
                             exam_a_date={ exam_a_date }
                             exam_b_date={ exam_b_date }
                             type={ type }
-                            bgColor={ bgColor }
                         />
-                    </React.Fragment>   : <button className='button' style={{
-                        backgroundColor : buttonColor
-                    }}>
+                    </React.Fragment>   : <button className='button'>
                         <Arrow
                             onClick={this.toggleArrow.bind(this)}
                             position={ this.state.arrowToggled }

@@ -4,15 +4,16 @@
   min-height: 3rem;
   background-color: rgba(0, 0, 0, 0);
 
-
   .button{
     display: flex;
     border-style: none;
     width: 8cm;
-    height: 0.7cm;
+    height: 0.5cm;
     transition: .4s;
-    border-color: #741616;
-    text-align: center;
+    background-color: #EF5455;
+    filter: brightness(1.4);
+    border-color: #EF5455;
+
 
     &:hover{
       transform: scale(1.1);

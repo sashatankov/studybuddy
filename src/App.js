@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
-import courses from './StudyPlan';
+import StudyPlan from './StudyPlan';
 
 class App extends Component {
 
@@ -29,9 +29,10 @@ class App extends Component {
     let currentScreenComponent = null;
     if(this.state.currentScreen = this.screens.GENERAL){
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
+
     }
     else if (this.state.currentScreen = this.screens.STUDY_PLAN){
-      currentScreenComponent = <courses/>;
+      currentScreenComponent = <StudyPlan/>;
     }
     else if (this.state.currentScreen = this.screens.SCHEDULE){
       // set the currentScreenComponent to schedule component

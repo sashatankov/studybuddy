@@ -35,8 +35,6 @@ class studyPlan extends Component {
                             type=""
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgba(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
                         <DropdownCard
                             name="סדנה במערכות מחשוב מנאנד לטטריס"
@@ -51,8 +49,6 @@ class studyPlan extends Component {
                             type=""
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgb(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
                         <DropdownCard
                             name="מבוא להסתברות וסטטיסטיקה"
@@ -61,14 +57,13 @@ class studyPlan extends Component {
                             professor="פרופ' יבגני סטרחוב"
                             TA="מר יואל גרינשפון"
                             course_average="76.9"
+                            course_average_link="https://hujistats.co.il/"
                             prerequisites="80131 - חשבון אינפיטיסימלי (1), 80133 - חשבון אינפיטיסימלי 2 לתלמידי מדעי המחשב"
                             exam_a_date="03/02/2019"
                             exam_b_date="03/03/2019"
                             type="קורס חובה"
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgb(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
                         <DropdownCard
                             name="סדנת תכנות C"
@@ -83,8 +78,6 @@ class studyPlan extends Component {
                             type=""
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgb(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
                         <DropdownCard
                             name="סדנת תכנות C++"
@@ -99,8 +92,6 @@ class studyPlan extends Component {
                             type=""
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgb(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
                         <DropdownCard
                             name="מבוא ללוגיקה"
@@ -115,8 +106,6 @@ class studyPlan extends Component {
                             type=""
                             messageOnToggled="Details"
                             messageOnUntoggled="Show less"
-                            buttonColor='rgb(239, 84, 85)'
-                            bgColor='rgb(250, 233, 200)'
                         />
 
                     </div>
