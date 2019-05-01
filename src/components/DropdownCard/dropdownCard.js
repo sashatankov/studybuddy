@@ -45,7 +45,8 @@ class DropdownCard extends React.Component{
                 />
 
                 {
-                    this.state.arrowToggled === true  ? <React.Fragment>
+                    this.state.arrowToggled === true  ?
+                    <React.Fragment>
                         <button className='button'>
                             <Arrow
                                 onClick={this.toggleArrow.bind(this)}
@@ -63,7 +64,8 @@ class DropdownCard extends React.Component{
                             exam_b_date={ exam_b_date }
                             type={ type }
                         />
-                    </React.Fragment>   : <button className='button'>
+                    </React.Fragment>   :
+                    <button className='button'>
                         <Arrow
                             onClick={this.toggleArrow.bind(this)}
                             position={ this.state.arrowToggled }

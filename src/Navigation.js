@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 import './Navigation.css';
 export default class navigation extends Component {
 
-  buttonClicked = null;
-  _handleClick(val){
-    this.props.buttonClicked(val);
+
+
+  constructor(props){
+    super(props);
+    this.buttonClicked = null;
+    this._handleClick = this._handleClick.bind(this);
+  }
+  _handleClick(event){
+    event.preventDefault();
+    this.props.buttonClicked(event.target.value);
   }
   render() {
     const logo = require('./logo200.png');
@@ -12,10 +19,10 @@ export default class navigation extends Component {
       <div className="navigation">
         <div className="nav">
           <div className="nav-btn">
-            <button onClick={this._handleClick(this.value)} value='general'>מידע כללי</button>
-            <button onClick={this._handleClick(this.value)} value='studyPlan'>מסלול לימודים</button>
-            <button onClick={this._handleClick(this.value)} value='schedule'>מערכת שעות</button>
-            <button onClick={this._handleClick(this.value)} value='exams'>לוח מבחנים</button>
+            <button onClick={this._handleClick} value='general'>מידע כללי</button>
+            <button onClick={this._handleClick} value='studyPlan'>מסלול לימודים</button>
+            <button onClick={this._handleClick} value='schedule'>מערכת שעות</button>
+            <button onClick={this._handleClick} value='exams'>לוח מבחנים</button>
           </div>
 
         </div>
