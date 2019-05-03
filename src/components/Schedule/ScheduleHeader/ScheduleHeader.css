@@ -1,0 +1,21 @@
+.scheduleheader {
+  display: flex;
+  height: 10%;
+  width: 100%;
+
+  margin: 0;
+
+}
+.dayName{
+    padding: 1% 0.8%;
+    width: 16.666%;
+    height: 100%;
+    text-align: center;
+    border-bottom: 1px solid #bbbbbb;
+
+}
+.blank {
+    border: none;
+    height: 100%;
+    width: 8.333%;
+}

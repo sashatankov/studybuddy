@@ -1,0 +1,21 @@
+.schedulerow {
+    display: flex;
+    width: 100%;
+    height: 6.666%;
+    margin: 0;
+}
+.rowCellTime {
+    padding: 1em;
+    height: 100%;
+    width: 8.333%;
+    text-align: center;
+
+}
+.rowCell {
+    padding: 1em 1em 2.37em 1em;
+    height: 100%;
+    width: 16.666%;
+    display: table-cell;
+
+}
+

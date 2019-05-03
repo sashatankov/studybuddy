@@ -3,6 +3,7 @@ import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
 import StudyPlan from './StudyPlan';
+import Schedule from './components/Schedule/Schedule';
 
 class App extends Component {
 
@@ -53,7 +54,7 @@ class App extends Component {
       currentScreenComponent = <StudyPlan/>;
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
-      // set the currentScreenComponent to schedule component
+      currentScreenComponent = <Schedule/>;
     }
     else {
       // set the currentScreenComponent to exams component
