@@ -3,19 +3,20 @@ import "./ScheduleEventDetailsBox.css";
 
 export default class ScheduleEventDetailsBox extends Component {
 
+
   constructor(props){
     super(props);
     this._hideDetails = this._hideDetails.bind(this);
-    this.overlayClassList = ["overlay"];
+
   }
 
   render() {
     const scheduleEvent = this.props.scheduleEventObj;
     const sideBarBgColor = {backgroundColor: scheduleEvent._getColor()};
     const titleColor = {color: scheduleEvent._getColor()};
-    let component = null;
+
     return (
-        <div className={this.overlayClassList.join(" ")}>
+        <div className="overlay">
           <div id="x" className="overlaybox" >
             <div className="overlaybox-sidebar" style={sideBarBgColor}>
 
@@ -25,6 +26,7 @@ export default class ScheduleEventDetailsBox extends Component {
                 <i className="fas fa-times"> </i>
               </div>
               <h1 style={titleColor}> {scheduleEvent.eventTitle} </h1>
+              <h3> {scheduleEvent.eventType} </h3>
               <h3>
                   {scheduleEvent.startTimeText} - {scheduleEvent.endTimeText}
               </h3>

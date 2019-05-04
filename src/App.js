@@ -46,7 +46,7 @@ class App extends Component {
     this.setState({overlayBox:
         (<ScheduleEventDetailsBox
             scheduleEventObj={scheduleEvent}
-            clicked={this._hideDetails.bind(this)} isOpen={true}/> )});
+            clicked={this._hideDetails.bind(this)}/> )});
   }
 
   _hideDetails(){

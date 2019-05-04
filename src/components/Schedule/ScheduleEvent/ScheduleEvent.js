@@ -14,10 +14,19 @@ export default class ScheduleEvent extends Component {
     STAT: 'stat',
     LOGIC: 'logic'
   };
+  classTypes = {
+    LECTURE: "lecture",
+    TA: "recitation",
+    LAB: "lab",
+    SEMINAR: "seminar"
+  };
   colors = {
-    ALGO_COLOR: "rgba(255, 156, 239, 1)",
-    STAT_COLOR: "rgba(73, 179, 172, 1)",
-    LOGIC_COLOR: "rgba(73, 179, 93, 1)"
+    ALGO_COLOR_TA: "rgba(255, 156, 239, 1)", // lighter shade
+    ALGO_COLOR_LECTURE: "rgba(224, 109, 235, 1)", // darker shade
+    STAT_COLOR_LECTURE: "rgba(73, 179, 172, 1)",
+    STAT_COLOR_TA: "rgba(114, 235, 231, 1)",
+    LOGIC_COLOR_LECTURE: "rgba(73, 179, 93, 1)",
+    LOGIC_COLOR_TA: "rgba(118, 235, 143)"
   };
   day = 0;
   startTime = 0;
@@ -31,6 +40,7 @@ export default class ScheduleEvent extends Component {
       this.classroom = this.props.classroom;
       this.professor = this.props.professor;
       this.course = this.props.course;
+      this.classType = this.props.classType;
 
       this._setStartEndTime();
       if(this.props.day === this.weekDays.SUNDAY){
@@ -53,19 +63,19 @@ export default class ScheduleEvent extends Component {
 
   }
 
-    _setStartEndTime() {
-        this.startTime = parseInt(this.props.starttime.slice(0, 2)) * 100;
-        this.endTime = parseInt(this.props.endTime.slice(0, 2)) * 100;
-        this.startTime += (parseInt(this.props.starttime.slice(3, 5)) / 60 * 100);
-        this.endTime += parseInt(this.props.endTime.slice(3, 5) / 60 * 100);
-    }
+  _setStartEndTime() {
+      this.startTime = parseInt(this.props.starttime.slice(0, 2)) * 100;
+      this.endTime = parseInt(this.props.endTime.slice(0, 2)) * 100;
+      this.startTime += (parseInt(this.props.starttime.slice(3, 5)) / 60 * 100);
+      this.endTime += parseInt(this.props.endTime.slice(3, 5) / 60 * 100);
+  }
 
   _getPositioning(){
 
       const pos= {
           position: 'absolute',
-          left: (8.333 + ((this.day - 1) * 16.666)).toString().concat("%"),
-          top: (3.333 + 6.666 * ((this.startTime - 800) / 100)).toString().concat("%"),
+          left: (8.333 + 1.4 + ((this.day - 1) * 16.666)).toString().concat("%"),
+          top: (3.333 - 1 + 6.666 * ((this.startTime - 800) / 100)).toString().concat("%"),
           width: "16.666%",
           height: (6.666 * ((this.endTime - this.startTime) / 100)).toString().concat("%"),
           zIndex: '10',
@@ -80,13 +90,28 @@ export default class ScheduleEvent extends Component {
 
   _getColor(){
     if(this.course === this.courses.ALGO){
-      return this.colors.ALGO_COLOR;
+      if(this.classType === this.classTypes.LECTURE){
+          return this.colors.ALGO_COLOR_LECTURE;
+      }
+      else if(this.classType === this.classTypes.TA){
+          return this.colors.ALGO_COLOR_TA;
+      }
     }
     else if (this.course === this.courses.STAT) {
-      return this.colors.STAT_COLOR;
+        if(this.classType === this.classTypes.LECTURE){
+            return this.colors.STAT_COLOR_LECTURE;
+        }
+        else if(this.classType === this.classTypes.TA){
+            return this.colors.STAT_COLOR_TA;
+        }
     }
     else if (this.course === this.courses.LOGIC) {
-      return this.colors.LOGIC_COLOR;
+        if(this.classType === this.classTypes.LECTURE){
+            return this.colors.LOGIC_COLOR_LECTURE;
+        }
+        else if(this.classType === this.classTypes.TA){
+            return this.colors.LOGIC_COLOR_TA;
+        }
     }
 
   }

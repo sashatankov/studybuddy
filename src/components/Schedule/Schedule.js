@@ -41,6 +41,7 @@ export default class Schedule extends Component {
                          eventType="שיעור"
                          classroom="קנדה"
                          course="algo"
+                         classType="lecture"
                          professor="פרופ אלכם סמורודניצקי"
                          clickedBox={this._showDetails.bind(this)}/>
 
@@ -51,6 +52,7 @@ export default class Schedule extends Component {
                          eventType="תרגול"
                          classroom="שפריצק 117"
                          course="logic"
+                         classType="recitation"
                          professor="פרופ אליהו ריפס"
                          clickedBox={this._showDetails.bind(this)}/>
 
@@ -61,7 +63,18 @@ export default class Schedule extends Component {
                          eventType="תרגול"
                          classroom="כימיה 7"
                          course="stat"
+                         classType="recitation"
                          professor="דר אורי גורביץ"
+                         clickedBox={this._showDetails.bind(this)}/>
+          <ScheduleEvent day="Tuesday"
+                         starttime="11:30"
+                         endTime="13:45"
+                         eventTitle="אלגוריתמים"
+                         eventType="תרגול"
+                         classroom="קנדה"
+                         course="algo"
+                         classType="recitation"
+                         professor="פרופ אלכם סמורודניצקי"
                          clickedBox={this._showDetails.bind(this)}/>
         </div>
 
