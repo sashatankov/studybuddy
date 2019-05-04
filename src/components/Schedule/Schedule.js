@@ -4,6 +4,16 @@ import ScheduleRow from './ScheduleRow/ScheduleRow.js';
 import ScheduleEvent from './ScheduleEvent/ScheduleEvent.js';
 import './Schedule.css';
 export default class Schedule extends Component {
+
+
+  constructor(props){
+    super(props);
+    this._showDetails = this._showDetails.bind(this);
+  }
+  _showDetails(scheduleEvent){
+    console.log("shoe details");
+    this.props.clicked(scheduleEvent);
+  }
   render() {
     return (
       <div className="schedule">
@@ -28,22 +38,31 @@ export default class Schedule extends Component {
                          starttime="10:00"
                          endTime="13:00"
                          eventTitle="אלגוריתמים"
+                         eventType="שיעור"
                          classroom="קנדה"
-                         course="algo"/>
+                         course="algo"
+                         professor="פרופ אלכם סמורודניצקי"
+                         clickedBox={this._showDetails.bind(this)}/>
 
           <ScheduleEvent day="Wednesday"
                          starttime="13:30"
                          endTime="14:45"
                          eventTitle="לוגיקה"
+                         eventType="תרגול"
                          classroom="שפריצק 117"
-                         course="logic"/>
+                         course="logic"
+                         professor="פרופ אליהו ריפס"
+                         clickedBox={this._showDetails.bind(this)}/>
 
           <ScheduleEvent day="Monday"
                          starttime="12:00"
                          endTime="14:15"
                          eventTitle="הסתברות"
+                         eventType="תרגול"
                          classroom="כימיה 7"
-                         course="stat"/>
+                         course="stat"
+                         professor="דר אורי גורביץ"
+                         clickedBox={this._showDetails.bind(this)}/>
         </div>
 
 

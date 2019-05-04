@@ -15,16 +15,23 @@ export default class ScheduleEvent extends Component {
     LOGIC: 'logic'
   };
   colors = {
-    ALGO_COLOR: "rgba(255, 156, 239, 0.8)",
-    STAT_COLOR: "rgba(73, 179, 172, 0.8)",
-    LOGIC_COLOR: "rgba(73, 179, 93, 0.8)"
+    ALGO_COLOR: "rgba(255, 156, 239, 1)",
+    STAT_COLOR: "rgba(73, 179, 172, 1)",
+    LOGIC_COLOR: "rgba(73, 179, 93, 1)"
   };
   day = 0;
   startTime = 0;
   endTime = 0;
   constructor(props){
       super(props);
+      this.eventTitle = this.props.eventTitle;
+      this.eventType = this.props.eventType;
+      this.startTimeText = this.props.starttime; // only the text of the time
+      this.endTimeText = this.props.endTime; // only the text of the time
+      this.classroom = this.props.classroom;
+      this.professor = this.props.professor;
       this.course = this.props.course;
+
       this._setStartEndTime();
       if(this.props.day === this.weekDays.SUNDAY){
         this.day = 1;
@@ -41,6 +48,7 @@ export default class ScheduleEvent extends Component {
       else if(this.props.day === this.weekDays.THURSDAY){
           this.day = 5;
       }
+      this._handleClick = this._handleClick.bind(this);
 
 
   }
@@ -82,10 +90,19 @@ export default class ScheduleEvent extends Component {
     }
 
   }
+
+  _handleClick(event){
+      event.preventDefault();
+      let x = document.getElementById("overlay-wrapper");
+      console.log(x);
+      this.props.clickedBox(this);
+  }
   render() {
 
     return (
-      <div className="scheduleevent" style={this._getPositioning()}>
+      <div className="scheduleevent"
+           style={this._getPositioning()}
+           onClick={this._handleClick}>
         <p>
             {this.props.eventTitle}
             <br/>
