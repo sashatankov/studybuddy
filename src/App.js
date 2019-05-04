@@ -4,6 +4,8 @@ import Message from './Message';
 import Navigation from "./Navigation";
 import StudyPlan from './StudyPlan';
 import Schedule from './components/Schedule/Schedule';
+import ScheduleEventDetailsBox
+    from './components/Schedule/ScheduleEventDetailsBox/ScheduleEventDetailsBox'
 
 class App extends Component {
 
@@ -17,19 +19,14 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      currentScreen: this.screens.GENERAL
+      currentScreen: this.screens.GENERAL,
+      overlayBox: ""
     };
+    this._hideDetails = this._hideDetails.bind(this);
   }
 
   _setScreen(val){
-    // todo
-    //  let screens = {
-    //       GENERAL: 'general',
-    //       EXAMS: 'exams',
-    //       STUDY_PLAN: 'study_plan',
-    //       SCHEDULE: 'schedule'
-    //   };
-      console.log(val);
+
     if(val === 'studyPlan'){
       this.setState({currentScreen: this.screens.STUDY_PLAN});
     }
@@ -44,6 +41,18 @@ class App extends Component {
     }
   }
 
+  _showDetails(scheduleEvent){
+    console.log("show details app");
+    this.setState({overlayBox:
+        (<ScheduleEventDetailsBox
+            scheduleEventObj={scheduleEvent}
+            clicked={this._hideDetails.bind(this)} isOpen={true}/> )});
+  }
+
+  _hideDetails(){
+    this.setState({overlayBox: ""});
+  }
+
   render() {
     let currentScreenComponent = null;
     if(this.state.currentScreen === this.screens.GENERAL){
@@ -54,7 +63,7 @@ class App extends Component {
       currentScreenComponent = <StudyPlan/>;
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
-      currentScreenComponent = <Schedule/>;
+      currentScreenComponent = <Schedule clicked={this._showDetails.bind(this)}/>;
     }
     else {
       // set the currentScreenComponent to exams component
@@ -63,6 +72,7 @@ class App extends Component {
       <div className="App">
         <Navigation buttonClicked={this._setScreen.bind(this)}/>
         {currentScreenComponent}
+        {this.state.overlayBox}
       </div>
     );
   }
