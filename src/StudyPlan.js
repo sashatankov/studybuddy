@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Heading, Table, TableBody, TableCell, TableRow, Text, Box, Accordion, AccordionPanel } from 'grommet';
 import { Card } from 'grommet-controls';
+import {fontSize} from "grommet/es6/utils";
 
 const Menu = () => (
     <Accordion>
@@ -12,9 +13,11 @@ const Menu = () => (
                     align='center'
                     justify='center'
                     background={{ color: '#EF5455', opacity: 'weak' }}
-                    height='small'
+                    height='medium-large'
                 >
-                    <Text color='text'>Panel 1 contents</Text>
+                    <Text color='text'>
+                        <Courses_YASA/>
+                    </Text>
                 </Box>
             </AccordionPanel>
             <AccordionPanel label='סמסטר ב' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
@@ -22,9 +25,11 @@ const Menu = () => (
                     align='center'
                     justify='center'
                     background={{ color: '#EF5455', opacity: 'weak' }}
-                    height='small'
+                    height='medium-large'
                 >
-                    <Text color='text'>Panel 1 contents</Text>
+                    <Text color='text'>
+                        <Courses_YASB/>
+                    </Text>
                 </Box>
             </AccordionPanel>
         <Heading level={2} style={{ textAlign: 'right' }}>
@@ -35,7 +40,7 @@ const Menu = () => (
                     align='center'
                     justify='center'
                     background={{ color: '#EF5455', opacity: 'weak' }}
-                    height='medium'
+                    height='medium-large'
                 >
                     <Text color='text'>
                         <Courses_YBSA/>
@@ -47,7 +52,7 @@ const Menu = () => (
                 align='center'
                 justify='center'
                 background={{ color: '#EF5455', opacity: 'weak' }}
-                height='small'
+                height='medium-large'
             >
                 <Text color='text'>Panel 1 contents</Text>
             </Box>
@@ -60,7 +65,7 @@ const Menu = () => (
                 align='center'
                 justify='center'
                 background={{ color: '#EF5455', opacity: 'weak' }}
-                height='small'
+                height='medium-large'
             >
                 <Text color='text'>Panel 1 contents</Text>
             </Box>
@@ -70,7 +75,7 @@ const Menu = () => (
                 align='center'
                 justify='center'
                 background={{ color: '#EF5455', opacity: 'weak' }}
-                height='small'
+                height='medium-large'
             >
                 <Text color='text'>Panel 1 contents</Text>
             </Box>
@@ -78,15 +83,68 @@ const Menu = () => (
     </Accordion>
 );
 
-const Course = ({ name, number, nz, professor, TA, course_average, prerequisites, exam_a_date, exam_b_date}) => (
+const Course = ({ name, number, nz, professor, TA, course_average, prerequisites, exam_a_date, exam_b_date, type}) => (
     <Card elevation='large'>
         <Card.CardTitle border='bottom' background='#EF5455' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
             {name}
         </Card.CardTitle>
-        <Card.CardContent style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
-            מספר הקורס:  {number} , נ"ז:  {nz}
+        <Card.CardContent style={{ fontSize: 'small', textAlign: 'right', flexDirection: 'row-reverse' }}>
+            <Text color="text" style={{ marginTop: 0}}>
+                <p>מספר הקורס: {number}, נ"ז: {nz}</p>
+                <p>סוג הקורס: {type}</p>
+            </Text>
         </Card.CardContent>
     </Card>
+);
+
+const Courses_YASA = () => (
+    <Box align='center'>
+        <Table>
+            <TableBody>
+                <TableRow>
+                    <TableCell>
+                        <Course name="מבוא למדעי המחשב" number="67101" nz="7" type="חובה"/>
+                    </TableCell>
+                    <TableCell>
+                        <Course name="חשבון אינפיטיסימלי 1" number="80131" nz="7" type="חובה"/>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Course name="מתמטיקה דיסקרטית" number="80181" nz="5" type="חובה"/>
+                    </TableCell>
+                    <TableCell>
+                        <Course name="אלגברה לינארית 1" number="80134" nz="6" type="חובה"/>
+                    </TableCell>
+                </TableRow>
+            </TableBody>
+        </Table>
+    </Box>
+);
+
+const Courses_YASB = () => (
+    <Box align='center'>
+        <Table>
+            <TableBody>
+                <TableRow>
+                    <TableCell>
+                        <Course name="מבוא לתכנות מונחה עצמים" number="67125" nz="4" type="חובה"/>
+                    </TableCell>
+                    <TableCell>
+                        <Course name="חשבון אינפיטיסימלי 2 לתלמידי מדעי המחשב" number="80133" nz="6" type="חובה"/>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Course name="מבני נתונים" number="67109" nz="4" type="חובה"/>
+                    </TableCell>
+                    <TableCell>
+                        <Course name="אלגברה לינארית 2" number="80135" nz="6" type="חובה"/>
+                    </TableCell>
+                </TableRow>
+            </TableBody>
+        </Table>
+    </Box>
 );
 
 const Courses_YBSA = () => (
@@ -95,24 +153,24 @@ const Courses_YBSA = () => (
             <TableBody>
                 <TableRow>
                     <TableCell>
-                        <Course name="אלגוריתמים" number="67504" nz="5"/>
+                        <Course name="אלגוריתמים" number="67504" nz="5" type="חובה"/>
                     </TableCell>
                     <TableCell>
-                        <Course name="סדנה במערכות מחשוב מנאנד לטטריס" number="67925" nz="5"/>
+                        <Course name="סדנה במערכות מחשוב מנאנד לטטריס" number="67925" nz="5" type="חובה"/>
                     </TableCell>
                     <TableCell>
-                        <Course name="מבוא להסתברות וסטטיסטיקה" number="80430" nz="6" professor="פרופ' יבגני סטרחוב"/>
+                        <Course name="מבוא להסתברות וסטטיסטיקה" number="80430" nz="6" type="חובה"/>
                     </TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>
-                        <Course name="סדנת תכנות C" number="67316" nz="2"/>
+                        <Course name="סדנת תכנות C" number="67316" nz="2" type="חובה"/>
                     </TableCell>
                     <TableCell>
-                        <Course name="סדנת תכנות C++" number="67317" nz="2"/>
+                        <Course name="סדנת תכנות C++" number="67317" nz="2" type="חובה"/>
                     </TableCell>
                     <TableCell>
-                        <Course name="מבוא ללוגיקה" number="80423" nz="4"/>
+                        <Course name="מבוא ללוגיקה" number="80423" nz="4" type="חובה"/>
                     </TableCell>
                 </TableRow>
             </TableBody>
