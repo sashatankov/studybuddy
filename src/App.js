@@ -3,6 +3,7 @@ import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
 import StudyPlan from './StudyPlan';
+import PersonalInfo from './personal_info';
 import Schedule from './components/Schedule/Schedule';
 import ScheduleEventDetailsBox
     from './components/Schedule/ScheduleEventDetailsBox/ScheduleEventDetailsBox'
@@ -13,7 +14,8 @@ class App extends Component {
     GENERAL: 'general',
     EXAMS: 'exams',
     STUDY_PLAN: 'study_plan',
-    SCHEDULE: 'schedule'
+    SCHEDULE: 'schedule',
+    PERSONAL: 'personal'
   };
 
   constructor(){
@@ -39,6 +41,9 @@ class App extends Component {
     else if(val === 'exams'){
       this.setState({currentScreen: this.screens.EXAMS});
     }
+    else if (val === 'personal') {
+      this.setState({currentScreen: this.screens.PERSONAL});
+    }
   }
 
   _showDetails(scheduleEvent){
@@ -57,13 +62,15 @@ class App extends Component {
     let currentScreenComponent = null;
     if(this.state.currentScreen === this.screens.GENERAL){
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
-
     }
     else if (this.state.currentScreen === this.screens.STUDY_PLAN){
       currentScreenComponent = <StudyPlan/>;
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
       currentScreenComponent = <Schedule clicked={this._showDetails.bind(this)}/>;
+    }
+    else if (this.state.currentScreen === this.screens.PERSONAL){
+      currentScreenComponent = <PersonalInfo/>;
     }
     else {
       // set the currentScreenComponent to exams component
