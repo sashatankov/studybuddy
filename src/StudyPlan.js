@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Heading, Table, TableBody, TableCell, TableRow, Text, Box, Accordion, AccordionPanel } from 'grommet';
 import { Card } from 'grommet-controls';
-import {fontSize} from "grommet/es6/utils";
 
 const Menu = () => (
     <Accordion>
         <Heading level={2} style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
             שנה א
         </Heading>
-            <AccordionPanel label='סמסטר א' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
+            <AccordionPanel arrow='#EF5455' label='סמסטר א' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
                 <Box
                     align='center'
                     justify='center'

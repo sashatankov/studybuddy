@@ -6,20 +6,26 @@ const GeneralInfo = () => (
     <Box
         fill={true}
         flex={true}
-        border={{ color: '#EF5455', size: 'small' }}
+        border={{ color: '#EF5455', size: 'medium', width: '50%' }}
         pad='medium'
     >
         <Text color='text' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
-            פקולטה: ביה"ס להנדסה ולמדעי המחשב
-        </Text>
-        <Text color='text' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
-            חוג לימודים: מדעי המחשב חד-חוגי מורחב
-        </Text>
-        <Text color='text' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
-            שנת לימודים: ב
-        </Text>
-        <Text color='text' style={{ textAlign: 'right', flexDirection: 'row-reverse' }}>
-            ממוצע: 83.2
+            <p>
+                <Text style={{ fontWeight:'bold' }} >פקולטה: </Text>
+                ביה"ס להנדסה ולמדעי המחשב
+            </p>
+            <p>
+                <Text style={{ fontWeight:'bold' }} >חוג לימודים: </Text>
+                מדעי המחשב חד-חוגי מורחב
+            </p>
+            <p>
+                <Text style={{ fontWeight:'bold' }} >שנת לימודים: </Text>
+                ב
+            </p>
+            <p>
+                <Text style={{ fontWeight:'bold' }} >ממוצע: </Text>
+                83.2
+            </p>
         </Text>
     </Box>
 );
