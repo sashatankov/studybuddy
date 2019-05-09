@@ -1,0 +1,13 @@
+.header-cell {
+    height: 100%;
+    width: 14.28%;
+    margin: 0 ;
+    padding-left: 0.4em;
+    box-sizing: border-box;
+
+}
+.calendarheader{
+    display: flex;
+    width: 80%;
+    height: 5%;
+}

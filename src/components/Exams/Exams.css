@@ -1,0 +1,17 @@
+.exams{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.exams-body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/*html, body, #root, .App {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/

@@ -7,6 +7,7 @@ import PersonalInfo from './personal_info';
 import Schedule from './components/Schedule/Schedule';
 import ScheduleEventDetailsBox
     from './components/Schedule/ScheduleEventDetailsBox/ScheduleEventDetailsBox'
+import Exams from "./components/Exams/Exams";
 
 class App extends Component {
 
@@ -73,7 +74,7 @@ class App extends Component {
       currentScreenComponent = <PersonalInfo/>;
     }
     else {
-      // set the currentScreenComponent to exams component
+      currentScreenComponent = <Exams/>;
     }
     return (
       <div className="App">
