@@ -9,3 +9,37 @@
     padding: 0;
     margin: 0;
 }
+.cal-nav{
+    box-sizing: border-box;
+    height: 100%;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-nav > i {
+    font-size: 1.5em;
+    color: #999999;
+}
+.cal-nav > i:hover{
+    cursor: hand;
+    color: black;
+}
+.cal-nav-month-wrapper {
+    vertical-align: middle;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #555555;
+    padding: 0;
+    margin: 0;
+}
+.cal-nav-header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 0 1em 0;
+}

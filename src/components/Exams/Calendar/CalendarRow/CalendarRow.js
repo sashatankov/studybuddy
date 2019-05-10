@@ -13,7 +13,7 @@ export default class CalendarRow extends Component {
   _getNumOfDaysInMonth(){
       const months31 = [1, 3, 5, 7, 8, 10, 12]; // Jan, Mar, MAy, Jul, Aug, Oct, Dec
       const months30 = [4, 6, 9, 11]; // Apr, Jun, Sep, Nov
-      let m = this.calendarMonth + 1;
+      let m = this.props.calendarMonth + 1;
 
       if(months31.includes(m)){
           return 31;
@@ -34,7 +34,7 @@ export default class CalendarRow extends Component {
   _getDateOfWeekDay(offset){
       // 0 is sun, 6 is Sat
       const days = this._getNumOfDaysInMonth();
-      let x =  ((this.startDate + offset) % days);
+      let x =  ((this.props.startDate + offset) % days);
       if(x === 0){
           return days;
       }

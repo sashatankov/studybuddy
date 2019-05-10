@@ -57,7 +57,7 @@ export default class Exam extends Component {
     const style = {
       backgroundColor: this._getColor(),
       color: "black",
-      top: (5+ Math.floor(this.date.getDate() / 7) * 18).toString().concat("%"),
+      top: (5 + 5 + Math.floor(this.date.getDate() / 7) * 18).toString().concat("%"),
       left: (10+11.45 * this._getWeekDayOffset()).toString().concat("%")
     };
     return style;
