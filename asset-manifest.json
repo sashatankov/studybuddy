@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/studybuddy/static/css/main.8099b53c.chunk.css",
+    "main.js": "/studybuddy/static/js/main.685daa8e.chunk.js",
+    "main.js.map": "/studybuddy/static/js/main.685daa8e.chunk.js.map",
+    "runtime~main.js": "/studybuddy/static/js/runtime~main.88b8ad6e.js",
+    "runtime~main.js.map": "/studybuddy/static/js/runtime~main.88b8ad6e.js.map",
+    "static/js/2.79763d23.chunk.js": "/studybuddy/static/js/2.79763d23.chunk.js",
+    "static/js/2.79763d23.chunk.js.map": "/studybuddy/static/js/2.79763d23.chunk.js.map",
+    "index.html": "/studybuddy/index.html",
+    "precache-manifest.c35d0d61fb6b166586f434c1a02db5bd.js": "/studybuddy/precache-manifest.c35d0d61fb6b166586f434c1a02db5bd.js",
+    "service-worker.js": "/studybuddy/service-worker.js",
+    "static/css/main.8099b53c.chunk.css.map": "/studybuddy/static/css/main.8099b53c.chunk.css.map"
+  }
+}
