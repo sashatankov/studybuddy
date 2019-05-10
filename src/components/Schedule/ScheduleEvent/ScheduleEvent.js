@@ -75,14 +75,18 @@ export default class ScheduleEvent extends Component {
       const pos= {
           position: 'absolute',
           left: (8.333 + 1.4 + ((this.day - 1) * 16.666)).toString().concat("%"),
-          top: (3.333 - 1 + 6.666 * ((this.startTime - 800) / 100)).toString().concat("%"),
+          top: (3.333 + 6.666 * ((this.startTime - 800) / 100)).toString().concat("%"),
           width: "16.666%",
           height: (6.666 * ((this.endTime - this.startTime) / 100)).toString().concat("%"),
           zIndex: '10',
           backgroundColor: this._getColor(),
           borderRadius: "10px",
           textAlign: "center",
-          padding: "0"
+          padding: "0",
+          fontWeight: "600",
+          color: "#3f3f3f",
+          fontSize: "1.1em",
+          boxSizing: "border-box"
       };
 
       return pos;

@@ -5,14 +5,17 @@
     margin: 0;
 }
 .rowCellTime {
-    padding: 1em;
+    padding: 0.5em 1em 1em 1em;
     height: 100%;
     width: 8.333%;
     text-align: center;
+    color: #555555;
+    font-size: 1.2em;
+
 
 }
 .rowCell {
-    padding: 1em 0em 2.37em 0em;
+    padding: 1em 0 2.37em 0;
     height: 100%;
     width: 16.666%;
     display: table-cell;
