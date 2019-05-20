@@ -11,7 +11,7 @@ export default class Schedule extends Component {
     this._showDetails = this._showDetails.bind(this);
   }
   _showDetails(scheduleEvent){
-    console.log("shoe details");
+    console.log("show details");
     this.props.clicked(scheduleEvent);
   }
   render() {
