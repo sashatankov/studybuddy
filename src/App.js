@@ -7,6 +7,7 @@ import PersonalInfo from './personal_info';
 import Schedule from './components/Schedule/Schedule';
 import ScheduleEventDetailsBox
     from './components/Schedule/ScheduleEventDetailsBox/ScheduleEventDetailsBox'
+import CourseDetails from './components/CourseDetails/CourseDetails.js'
 import Exams from "./components/Exams/Exams";
 import LoginScreen from './components/LoginScreen/LoginScreen';
 import RegisterScreen from './components/RegisterScreen/RegisterScreen';
@@ -61,12 +62,20 @@ class App extends Component {
     }
   }
 
-  _showDetails(scheduleEvent){
+  _showDetailsSch(scheduleEvent){
     console.log("show details app");
     this.setState({overlayBox:
         (<ScheduleEventDetailsBox
             scheduleEventObj={scheduleEvent}
             clicked={this._hideDetails.bind(this)}/> )});
+  }
+
+  _showDetailsCourse(course){
+    console.log("show details app");
+    this.setState({overlayBox:
+          (<CourseDetails
+              CourseObj={course}
+              clicked={this._hideDetails.bind(this)}/> )});
   }
 
   _hideDetails(){
@@ -95,10 +104,10 @@ class App extends Component {
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
     }
     else if (this.state.currentScreen === this.screens.STUDY_PLAN){
-      currentScreenComponent = <StudyPlan/>;
+      currentScreenComponent = <StudyPlan clicked={this._showDetailsCourse.bind(this)}/>
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
-      currentScreenComponent = <Schedule clicked={this._showDetails.bind(this)}/>;
+      currentScreenComponent = <Schedule clicked={this._showDetailsSch.bind(this)}/>;
     }
     else if (this.state.currentScreen === this.screens.PERSONAL){
       currentScreenComponent = <PersonalInfo/>;
