@@ -12,7 +12,6 @@ class CourseMainData extends Component {
     REQ_CHOICE: "חובת בחירה",
   };
   colors = {
-      // TODO change
     REQUIRED: "#EF5455",
     CHOICE: "#e87778",
     REQ_CHOICE: "#edaaaa",

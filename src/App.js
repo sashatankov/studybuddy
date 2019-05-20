@@ -74,7 +74,7 @@ class App extends Component {
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
     }
     else if (this.state.currentScreen === this.screens.STUDY_PLAN){
-      currentScreenComponent = <StudyPlan clicked={this._showDetailsCourse.bind(this)}/>    //TODO
+      currentScreenComponent = <StudyPlan clicked={this._showDetailsCourse.bind(this)}/>
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
       currentScreenComponent = <Schedule clicked={this._showDetailsSch.bind(this)}/>;
