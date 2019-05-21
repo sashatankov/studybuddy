@@ -21,7 +21,7 @@ export default class LoginScreen extends Component {
                    onBlur={(e) => e.target.placeholder = "Username"}/>
           </div>
           <div className="loginscreen-password">
-            <input placeholder="password"
+            <input type="password" placeholder="password"
                    onFocus={(e) => e.target.placeholder = ""}
                    onBlur={(e) => e.target.placeholder = "password"}/>
           </div>

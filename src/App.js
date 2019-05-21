@@ -12,6 +12,7 @@ import Exams from "./components/Exams/Exams";
 import LoginScreen from './components/LoginScreen/LoginScreen';
 import RegisterScreen from './components/RegisterScreen/RegisterScreen';
 import QuestionsScreen from './components/QuestionsScreen/QuestionsScreen';
+import ExamDetailsBox from './components/Exams/ExamDetailsBox/ExamDetailsBox';
 
 class App extends Component {
 
@@ -80,6 +81,11 @@ class App extends Component {
               CourseObj={course}
               clicked={this._hideDetails.bind(this)}/> )});
   }
+  _showDetailsExam(exam){
+      this.setState({overlayBox:
+          (<ExamDetailsBox examObj={exam}
+                           clicked={this._hideDetails.bind(this)}/>)});
+  }
 
   _hideDetails(){
     this.setState({overlayBox: ""});
@@ -118,7 +124,7 @@ class App extends Component {
       currentScreenComponent = <PersonalInfo/>;
     }
     else if (this.state.currentScreen === this.screens.EXAMS) {
-      currentScreenComponent = <Exams/>;
+      currentScreenComponent = <Exams clicked={this._showDetailsExam.bind(this)}/>;
     }
     else if(this.state.currentScreen === this.screens.LOGIN) {
       currentScreenComponent = <LoginScreen logInHandle={this._logIn.bind(this)} registerHandle={this._register.bind(this)}/>;

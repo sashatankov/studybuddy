@@ -27,3 +27,12 @@
     margin: 1em;
     font-size: 1em;
 }
+.questionsscreen-submit > input:hover{
+    color: #2a3151;
+    background-color: #eeeeee;
+    border-color: #2A3151;
+
+}
+.questionsscreen-submit > input:focus {
+    outline: none;
+}

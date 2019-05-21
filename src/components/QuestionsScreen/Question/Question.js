@@ -17,7 +17,7 @@ export default class Question extends Component {
 
                 </div>
                 <div className="question-option-text">
-                    {this.props.values[2]}
+                    {this.props.values[1]}
                     <input type={this.props.type} name={this.props.name} value={this.props.values[1]}/>
 
                 </div>
