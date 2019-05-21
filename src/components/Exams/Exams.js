@@ -12,7 +12,7 @@ export default class Exams extends Component {
         classroom: "קנדה",
         startTime: "13:00",
         endTime: "16:00",
-        util: "",
+        util: "מחשבון",
         date: "15/05/2019"
       },
       {
@@ -22,7 +22,7 @@ export default class Exams extends Component {
           classroom: "הנדסה",
           startTime: "10:00",
           endTime: "13:00",
-          util:"",
+          util:"דף נוסחאות",
           date:"23/06/2019"
       },
       {
@@ -45,6 +45,9 @@ export default class Exams extends Component {
     console.log("exams: ".concat(this.curMonth.toString()));
     this.curYear = (new Date()).getFullYear();
   }
+  _showExamDetails(examObj){
+      this.props.clicked(examObj);
+  }
   _getExams(){
     let currentExams = this.exams.filter((exam)=>{
       return parseInt(exam.date.slice(3,5)) - 1 === this.state.curMonth &&
@@ -58,7 +61,8 @@ export default class Exams extends Component {
                 classroom={exam.classroom}
                 startTime={exam.startTime}
                 endTime={exam.endTime}
-                util={exam.util} date={exam.date}/>
+                util={exam.util} date={exam.date}
+                clickedExam={this._showExamDetails.bind(this)}/>
       );
     });
   }

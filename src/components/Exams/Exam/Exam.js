@@ -29,6 +29,7 @@ export default class Exam extends Component {
     this.utils = this.props.utils;
     this.dateText = this.props.date; // format of dd/mm/yyyy
     this.date = this._parseDateText();
+    this._handleClick = this._handleClick.bind(this);
 
   }
   _parseDateText(){
@@ -42,10 +43,14 @@ export default class Exam extends Component {
   _getWeekDayOffset(){
       return this.date.getDay();
   }
+  _handleClick(event){
+      event.preventDefault();
+      this.props.clickedExam(this);
+  }
 
   render() {
     return (
-      <div className="exam" style={this._getStyle()}>
+      <div className="exam" style={this._getStyle()} onClick={this._handleClick}>
         <h4>{this.title}</h4>
         <h4>{this.startTime} - {this.endTime}</h4>
         <h4>{this.classroom}</h4>

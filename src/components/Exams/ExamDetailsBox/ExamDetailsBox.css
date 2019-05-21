@@ -1,0 +1,47 @@
+.examdetailsbox-overlaybox {
+    position: absolute;
+    width: 33%;
+    height: 33%;
+    top: 33%;
+    left: 33%;
+    display: flex;
+    flex-direction: row;
+}
+.examdetailsbox-overlaybox-sidebar {
+    width: 35%;
+    height: 100%;
+    z-index: 30;
+    padding: 1rem;
+}
+.examdetailsbox-overlaybox-content {
+    width: 65%;
+    height: 100%;
+    z-index: 30;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+
+}
+.examdetailsbox-overlaybox-content > * {
+    margin: 0.3rem;
+}
+.examdetailsbox-overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 101.75%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+//opacity: 0;
+//visibility: hidden;
+//transition: opacity 0.5s, visibility 0.5s;
+
+}
+.quit i{
+    color: black;
+}
