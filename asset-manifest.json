@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/studybuddyapp/static/css/main.8099b53c.chunk.css",
-    "main.js": "/studybuddyapp/static/js/main.d8710810.chunk.js",
-    "main.js.map": "/studybuddyapp/static/js/main.d8710810.chunk.js.map",
+    "main.css": "/studybuddyapp/static/css/main.1f12a4f6.chunk.css",
+    "main.js": "/studybuddyapp/static/js/main.27898954.chunk.js",
+    "main.js.map": "/studybuddyapp/static/js/main.27898954.chunk.js.map",
     "runtime~main.js": "/studybuddyapp/static/js/runtime~main.93ad2417.js",
     "runtime~main.js.map": "/studybuddyapp/static/js/runtime~main.93ad2417.js.map",
-    "static/js/2.bada9800.chunk.js": "/studybuddyapp/static/js/2.bada9800.chunk.js",
-    "static/js/2.bada9800.chunk.js.map": "/studybuddyapp/static/js/2.bada9800.chunk.js.map",
+    "static/js/2.e48a58a7.chunk.js": "/studybuddyapp/static/js/2.e48a58a7.chunk.js",
+    "static/js/2.e48a58a7.chunk.js.map": "/studybuddyapp/static/js/2.e48a58a7.chunk.js.map",
     "index.html": "/studybuddyapp/index.html",
-    "precache-manifest.645bd6997c2035aba7744317eace31fc.js": "/studybuddyapp/precache-manifest.645bd6997c2035aba7744317eace31fc.js",
+    "precache-manifest.c3467164797d5090ade624861086e10d.js": "/studybuddyapp/precache-manifest.c3467164797d5090ade624861086e10d.js",
     "service-worker.js": "/studybuddyapp/service-worker.js",
-    "static/css/main.8099b53c.chunk.css.map": "/studybuddyapp/static/css/main.8099b53c.chunk.css.map"
+    "static/css/main.1f12a4f6.chunk.css.map": "/studybuddyapp/static/css/main.1f12a4f6.chunk.css.map",
+    "static/media/logo500.png": "/studybuddyapp/static/media/logo500.8d72d724.png"
   }
 }
