@@ -51,6 +51,9 @@ class App extends Component {
     else if (val === 'general') {
       this.setState({currentScreen: this.screens.GENERAL});
     }
+    else if(val === 'questions') {
+      this.setState({currentScreen: this.screens.QUESTIONS});
+    }
     else if (val === 'schedule'){
       this.setState({currentScreen: this.screens.SCHEDULE});
     }
@@ -97,7 +100,9 @@ class App extends Component {
   render() {
     let currentScreenComponent = null;
     let navigationComponent = null;
-    if(this.state.currentScreen !== this.screens.LOGIN){
+    if(this.state.currentScreen !== this.screens.LOGIN &&
+       this.state.currentScreen !== this.screens.REGISTER &&
+       this.state.currentScreen !== this.screens.QUESTIONS){
       navigationComponent = <Navigation buttonClicked={this._setScreen.bind(this)}/>;
     }
     if(this.state.currentScreen === this.screens.GENERAL){

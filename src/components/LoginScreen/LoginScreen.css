@@ -40,10 +40,8 @@
     height: 10%;
     width: 50%;
     display: flex;
-    justify-content: space-around;
-
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    padding-left: 3em;
 }
 .loginscreen-submit > input {
     width: 100%;

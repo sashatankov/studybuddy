@@ -1,0 +1,36 @@
+.question{
+    width: 100%;
+    height: 20%;
+    margin: 2em 0;
+
+}
+.question-content {
+    font-size: 1.3em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.question-options{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.question-options-text {
+    display: flex;
+    flex-direction: column;
+}
+.question-option-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.question-option-text > input[type='radio'] {
+    background-color: #eeeeee;
+    color: #2a3151;
+    padding: 0.5em;
+    width: 1.3em;
+    height: 1.3em;
+}
+.question-options > input {
+    margin:0.5em;
+
+}
