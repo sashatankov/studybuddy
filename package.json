@@ -2,7 +2,7 @@
   "name": "studybuddy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sashatankov.github.io/studybuddyapp",
+  "homepage": "https://sashatankov.github.io/studybuddy",
   "dependencies": {
     "gh-pages":"^2.0.1",
     "classnames": "^2.2.6",
