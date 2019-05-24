@@ -26,16 +26,16 @@ export default class CourseDetails extends Component {
               <div className="quit" onClick={this._hideDetails}>
                 <i className="fas fa-times"> </i>
               </div>
-              <h1 style={titleColor}> {details.name} </h1>
-              <p>מספר הקורס: {details.number}</p>
-              <p>נ"ז: {details.nz}</p>
-              <p>סוג הקורס: {details.courseType}</p>
-              <p>מרצה: {details.professor}</p>
-              <p>מתרגל/ת: {details.TA}</p>
-              <p>ממוצע הקורס: {details.course_average}</p>
-              <p>דרישות קדם: {details.prerequisites}</p>
-              <p>תאריך מבחן מועד א: {details.exam_a_date}</p>
-              <p>תאריך מבחן מועד ב: {details.exam_b_date}</p>
+              <h1 style={titleColor}> {details.state.courseName} </h1>
+              <p>מספר הקורס: {details.state.courseNumber}</p>
+              <p>נ"ז: {details.state.nz}</p>
+              <p>סוג הקורס: {details.state.courseType}</p>
+              <p>מרצה: {details.state.professor}</p>
+              <p>מתרגל/ת: {details.state.TA}</p>
+              <p>ממוצע הקורס: {details.state.course_average}</p>
+              <p>דרישות קדם: {details.state.prerequisites}</p>
+              <p>תאריך מבחן מועד א: {details.state.exam_a_date}</p>
+              <p>תאריך מבחן מועד ב: {details.state.exam_b_date}</p>
             </div>
           </div>
         </div>

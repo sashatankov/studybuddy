@@ -20,11 +20,11 @@ const GeneralInfo = () => (
             </p>
             <p>
                 <Text style={{ fontWeight:'bold' }} >שנת לימודים: </Text>
-                ב
+                א
             </p>
             <p>
-                <Text style={{ fontWeight:'bold' }} >ממוצע: </Text>
-                83.2
+                <Text style={{ fontWeight:'bold' }} >:ממוצע </Text>
+
             </p>
         </Text>
     </Box>

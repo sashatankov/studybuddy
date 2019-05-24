@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Message from './Message';
 import Navigation from "./Navigation";
-import StudyPlan from './StudyPlan';
+import StudyPlan from './StudyPlan_table';
 import PersonalInfo from './personal_info';
 import Schedule from './components/Schedule/Schedule';
 import ScheduleEventDetailsBox
@@ -115,7 +115,7 @@ class App extends Component {
       currentScreenComponent = <Message headline="ביטול שיעור" content="השיעור באלגברה לינארית בתאריך 10.4.2019 מבוטל"/>;
     }
     else if (this.state.currentScreen === this.screens.STUDY_PLAN){
-      currentScreenComponent = <StudyPlan clicked={this._showDetailsCourse.bind(this)}/>
+      currentScreenComponent = <StudyPlan clicked={this._showDetailsCourse.bind(this)}/> 
     }
     else if (this.state.currentScreen === this.screens.SCHEDULE){
       currentScreenComponent = <Schedule clicked={this._showDetailsSch.bind(this)}/>;
