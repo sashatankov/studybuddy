@@ -50,3 +50,12 @@
 .quit i{
     color: black;
 }
+
+.card {
+    font-size: 12px;
+}
+.card > .header {
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+    text-align: center;
+}

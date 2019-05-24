@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Box, Text, Meter, TableBody, TableRow, TableCell, Table} from 'grommet';
+import './personal_info.css';
 
 
 const GeneralInfo = () => (

@@ -1,7 +1,6 @@
 import {Grommet, Menu, TableCell, TableRow, Text} from "grommet/es6";
 import React, {Component} from "react";
 
-
 const customTheme = {
     global: {
         font: {

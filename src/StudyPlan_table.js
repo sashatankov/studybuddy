@@ -1,5 +1,6 @@
 
 import React, {Component} from "react";
+import './StudyPlan_table.css';
 import Choose_c from './components/CourseTypeChoose/choose_c';
 import Choose_cpp from './components/CourseTypeChoose/choose_cpp';
 import Choose_yasa_hova from './components/CourseTypeChoose/choose_yasa_hova';
@@ -58,7 +59,7 @@ const customTheme = {
 const CustomThemeTable = ({ click }) => (
     <Grommet theme={customTheme}>
         <Box align="center" pad="xsmall">
-            <Table caption="Custom Theme Table">
+            <Table scrollable>
                 <TableHeader>
                     <TableRow>
                         {columns.map(c => (
