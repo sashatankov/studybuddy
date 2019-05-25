@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f856e5d58d0077dba849045b8b8c8055",
+    "revision": "44c972dd4044df9ab4495dde3b7197f0",
     "url": "/studybuddy/index.html"
   },
   {
-    "revision": "ab5392ba8e2184c4bd18",
+    "revision": "7ff263a6b6d8c87cb5b3",
     "url": "/studybuddy/static/css/main.0708fbd4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/studybuddy/static/js/2.08e3b26a.chunk.js"
   },
   {
-    "revision": "ab5392ba8e2184c4bd18",
-    "url": "/studybuddy/static/js/main.8d8af713.chunk.js"
+    "revision": "7ff263a6b6d8c87cb5b3",
+    "url": "/studybuddy/static/js/main.cce005a4.chunk.js"
   },
   {
     "revision": "8890f9c60c6d3c43c5ad",
