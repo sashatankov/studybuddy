@@ -85,12 +85,6 @@ const CustomThemeTable = ({ click }) => (
                         <Choose_ybsa_hova click={click}/>
                     </TableRow>
                     <TableRow>
-                        <Choose_ybsa_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_ybsa_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
                         <Choose_logic click={click}/>
                     </TableRow>
                     <TableRow>
