@@ -76,24 +76,6 @@ const CustomThemeTable = ({ click }) => (
                         <Choose_yasa_hova click={click}/>
                     </TableRow>
                     <TableRow>
-                        <Choose_yasa_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_yasa_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_yasa_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_yasb_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_yasb_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
-                        <Choose_yasb_hova click={click}/>
-                    </TableRow>
-                    <TableRow>
                         <Choose_yasb_hova click={click}/>
                     </TableRow>
                     <TableRow>
