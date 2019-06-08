@@ -20,6 +20,7 @@ import {
     Text
 } from "grommet";
 import { columns } from "./data";
+import Popup from "reactjs-popup";
 
 
 const customTheme = {
@@ -55,9 +56,37 @@ const customTheme = {
     }
 };
 
+const links = {
+    studyPlan: require('./studyPlan.jpg')
+};
+
+const Card = ({ url }) => (
+    <div className="card">
+        <div className="content">
+            <img src={url} width="400%" height="400%" />
+        </div>
+    </div>
+);
+
+const ToolTipPositions = ({text}) => (
+    <div className="example-warper">
+
+        <Popup
+            trigger={<button className="button"> {text} </button>}
+            position="left top"
+            on="hover"
+        >
+            <Card url={links.studyPlan} />
+        </Popup>
+    </div>
+);
+
 
 const CustomThemeTable = ({ click }) => (
     <Grommet theme={customTheme}>
+        <Box align="end">
+            <ToolTipPositions text="תוכנית לימודים מומלצת"/>
+        </Box>
         <Box align="center" pad="xsmall">
             <Table scrollable>
                 <TableHeader>

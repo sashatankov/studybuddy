@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./CourseDetails.css";
-import "./CourseDetails_DATA/67125.grades.jpg";
 import Popup from 'reactjs-popup';
 
 const Card = ({ url }) => (
