@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/studybuddy/static/css/main.0708fbd4.chunk.css",
-    "main.js": "/studybuddy/static/js/main.cce005a4.chunk.js",
-    "main.js.map": "/studybuddy/static/js/main.cce005a4.chunk.js.map",
+    "main.css": "/studybuddy/static/css/main.f0765c84.chunk.css",
+    "main.js": "/studybuddy/static/js/main.d685b18f.chunk.js",
+    "main.js.map": "/studybuddy/static/js/main.d685b18f.chunk.js.map",
     "runtime~main.js": "/studybuddy/static/js/runtime~main.88b8ad6e.js",
     "runtime~main.js.map": "/studybuddy/static/js/runtime~main.88b8ad6e.js.map",
-    "static/js/2.08e3b26a.chunk.js": "/studybuddy/static/js/2.08e3b26a.chunk.js",
-    "static/js/2.08e3b26a.chunk.js.map": "/studybuddy/static/js/2.08e3b26a.chunk.js.map",
+    "static/js/2.4c13b2da.chunk.js": "/studybuddy/static/js/2.4c13b2da.chunk.js",
+    "static/js/2.4c13b2da.chunk.js.map": "/studybuddy/static/js/2.4c13b2da.chunk.js.map",
     "index.html": "/studybuddy/index.html",
-    "precache-manifest.c4dcb4b8b19c3c51702dcb4655087635.js": "/studybuddy/precache-manifest.c4dcb4b8b19c3c51702dcb4655087635.js",
+    "precache-manifest.3d8d414763df5ebe6bd097a08d20320a.js": "/studybuddy/precache-manifest.3d8d414763df5ebe6bd097a08d20320a.js",
     "service-worker.js": "/studybuddy/service-worker.js",
-    "static/css/main.0708fbd4.chunk.css.map": "/studybuddy/static/css/main.0708fbd4.chunk.css.map",
+    "static/css/main.f0765c84.chunk.css.map": "/studybuddy/static/css/main.f0765c84.chunk.css.map",
     "static/media/53336.grades.jpg": "/studybuddy/static/media/53336.grades.9426cdad.jpg",
     "static/media/57108.grades.jpg": "/studybuddy/static/media/57108.grades.800690dc.jpg",
     "static/media/67101.grades.jpg": "/studybuddy/static/media/67101.grades.849f96ea.jpg",
@@ -28,6 +28,7 @@
     "static/media/80181.grades.jpg": "/studybuddy/static/media/80181.grades.336b275f.jpg",
     "static/media/80423.grades.jpg": "/studybuddy/static/media/80423.grades.f39f0cf0.jpg",
     "static/media/80430.grades.jpg": "/studybuddy/static/media/80430.grades.53b0a928.jpg",
-    "static/media/logo500.png": "/studybuddy/static/media/logo500.8d72d724.png"
+    "static/media/logo500.png": "/studybuddy/static/media/logo500.8d72d724.png",
+    "static/media/studyPlan.jpg": "/studybuddy/static/media/studyPlan.2ac067f6.jpg"
   }
 }

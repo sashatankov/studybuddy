@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44c972dd4044df9ab4495dde3b7197f0",
+    "revision": "2e414ae7eb521257245e9c404e9e8b2c",
     "url": "/studybuddy/index.html"
   },
   {
-    "revision": "7ff263a6b6d8c87cb5b3",
-    "url": "/studybuddy/static/css/main.0708fbd4.chunk.css"
+    "revision": "c5e2016264a33466efef",
+    "url": "/studybuddy/static/css/main.f0765c84.chunk.css"
   },
   {
-    "revision": "0dd5b162f45a83b6c98b",
-    "url": "/studybuddy/static/js/2.08e3b26a.chunk.js"
+    "revision": "f9d4648b1aa07df30682",
+    "url": "/studybuddy/static/js/2.4c13b2da.chunk.js"
   },
   {
-    "revision": "7ff263a6b6d8c87cb5b3",
-    "url": "/studybuddy/static/js/main.cce005a4.chunk.js"
+    "revision": "c5e2016264a33466efef",
+    "url": "/studybuddy/static/js/main.d685b18f.chunk.js"
   },
   {
     "revision": "8890f9c60c6d3c43c5ad",
@@ -90,5 +90,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d72d7247131806b6663874e6fb492ea",
     "url": "/studybuddy/static/media/logo500.8d72d724.png"
+  },
+  {
+    "revision": "2ac067f6932c371484a4138883123852",
+    "url": "/studybuddy/static/media/studyPlan.2ac067f6.jpg"
   }
 ]);
